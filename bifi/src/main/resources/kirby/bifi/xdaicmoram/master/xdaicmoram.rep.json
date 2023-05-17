@@ -1,0 +1,11 @@
+{
+    "_id" : "bifi-co-krb-inm-xdaicmoramr-01",
+    "description" : "Job bifi-co-krb-inm-xdaicmoramr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/bifi/master/xdaicmoram/${version}/xdaicmoram.rep.conf"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "S",
+    "streaming" : false
+}

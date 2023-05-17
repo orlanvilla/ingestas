@@ -1,0 +1,12 @@
+{
+    "_id" : "bipp-co-spk-qlt-l1txdapetercem-01",
+    "description" : "Job bipp-co-spk-qlt-l1txdapetercem-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/bipp/master/l1txdapeterce/${version}/l1txdapeterce-01.conf",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "S",
+    "streaming" : false
+}

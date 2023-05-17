@@ -1,0 +1,12 @@
+{
+    "_id" : "bipp-co-krb-inm-l1txdapeclienr-01",
+    "description" : "Job bipp-co-krb-inm-l1txdapeclienr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/bipp/master/l1txdapeclien/${version}/l1txdapeclien.rep.conf",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "S",
+    "streaming" : false
+}

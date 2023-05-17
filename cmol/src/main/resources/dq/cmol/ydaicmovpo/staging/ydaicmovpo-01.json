@@ -1,0 +1,12 @@
+{
+    "_id" : "cmol-co-spk-qlt-ydaicmovpos-01",
+    "description" : "Job cmol-co-spk-qlt-ydaicmovpos-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/cmol/staging/ydaicmovpo/${version}/ydaicmovpo-01.conf",
+        "sparkHistoryEnabled" : "true"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

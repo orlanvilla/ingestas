@@ -1,0 +1,75 @@
+{
+  "namespace": "bips",
+  "name": "t_bips_xdaicfcg_gastos_poliza",
+  "doc": "Tabla que contiene los porcentajes de gastos en los que incurren la polizas emitidas en AcselX, pudiendo ser gastos de Comision, Retribucion, Gastos de Administracion, Utilidades, entre otros.",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/bips/data/t_bips_xdaicfcg_gastos_poliza",
+  "partitions": ["partition_data_year_id", "partition_data_month_id", "partition_data_day_id"],
+  "securityLevel": "L1",
+  "type": "record",
+  "fields": [{
+    "name": "policy_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "expense_concept_type",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "expense_concept_per",
+    "type": ["null", "decimal(9,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(9,6)",
+    "locale": "co"
+  }, {
+    "name": "fixed_calc_expense_amount",
+    "type": ["null", "decimal(22,2)"],
+    "logicalFormat": "DECIMAL(22,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(22,2)",
+    "locale": "co"
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_day_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "timestamp",
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+    "locale": "co"
+  }]
+}

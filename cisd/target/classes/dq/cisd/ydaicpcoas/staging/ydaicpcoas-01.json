@@ -1,0 +1,12 @@
+{
+    "_id" : "cisd-co-spk-qlt-ydaicpcoass-01",
+    "description" : "Job cisd-co-spk-qlt-ydaicpcoass-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/cisd/staging/ydaicpcoas/${version}/ydaicpcoas-01.conf",
+        "sparkHistoryEnabled" : "true"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

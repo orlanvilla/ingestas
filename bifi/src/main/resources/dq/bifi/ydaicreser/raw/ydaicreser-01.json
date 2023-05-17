@@ -1,0 +1,11 @@
+{
+    "_id" : "bifi-co-spk-qlt-ydaicreserr-01",
+    "description" : "Job bifi-co-spk-qlt-ydaicreserr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/bifi/raw/ydaicreser/${version}/ydaicreser-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kmcs" />
+        <module name="bips" />
+        <module name="bifi" />
+        <module name="biac" />
+        <module name="cmol" />
+        <module name="bipp" />
+        <module name="bida" />
+        <module name="kipp" />
+        <module name="cbil" />
+        <module name="biri" />
+        <module name="cbtq" />
+        <module name="csan" />
+        <module name="ccog" />
+        <module name="cgug" />
+        <module name="cisd" />
+        <module name="cpad" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

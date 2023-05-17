@@ -1,0 +1,11 @@
+{
+    "_id" : "bips-co-spk-qlt-l1tydapepolizm-01",
+    "description" : "Job bips-co-spk-qlt-l1tydapepolizm-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/bips/master/l1tydapepoliz/${version}/l1tydapepoliz-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

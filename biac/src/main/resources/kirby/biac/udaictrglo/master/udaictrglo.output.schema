@@ -1,0 +1,188 @@
+{
+  "namespace": "biac",
+  "name": "t_biac_udaictrglo_inf_triangulos",
+  "doc": "Contiene la informacion de los triangulos de siniestros con la cual se analiza el desarrollo de la siniestralidad a lo largo del tiempo y sirve de base para determinados calculos de reservas o provisiones de los productos de no vida",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/biac/data/t_biac_udaictrglo_inf_triangulos",
+  "partitions": ["partition_data_year_id", "partition_data_month_id"],
+  "securityLevel": "L1",
+  "type": "record",
+  "fields": [{
+    "name": "cutoff_date",
+    "type": "date",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "triangle_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "claim_occurrence_date",
+    "type": "date",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "triangle_dev_period_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "triangle_desc",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(254)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "similar_risk_grouping_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insrc_guarantee_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insrc_coverage_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "triangle_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "triangle_occurrence_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "reins_gross_amount_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "rcvy_gross_amount_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "origin_currency_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "local_currency_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "oc_pmt_or_rcovr_amount",
+    "type": ["null", "decimal(26,6)"],
+    "logicalFormat": "DECIMAL(26,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(26,6)",
+    "locale": "co"
+  }, {
+    "name": "lc_pmt_or_rcovr_amount",
+    "type": ["null", "decimal(26,6)"],
+    "logicalFormat": "DECIMAL(26,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(26,6)",
+    "locale": "co"
+  }, {
+    "name": "triangle_period_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "incurred_claim_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC LARGE",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "cl_avg_cost_oc_amount",
+    "type": ["null", "decimal(26,6)"],
+    "logicalFormat": "DECIMAL(26,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(26,6)",
+    "locale": "co"
+  }, {
+    "name": "cl_avg_cost_lc_amount",
+    "type": ["null", "decimal(26,6)"],
+    "logicalFormat": "DECIMAL(26,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(26,6)",
+    "locale": "co"
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "timestamp",
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+    "locale": "co"
+  }]
+}

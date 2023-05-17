@@ -1,0 +1,11 @@
+{
+    "_id" : "bips-co-spk-qlt-xdaiccertis-01",
+    "description" : "Job bips-co-spk-qlt-xdaiccertis-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/bips/staging/xdaiccerti/${version}/xdaiccerti-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "S",
+    "streaming" : false
+}

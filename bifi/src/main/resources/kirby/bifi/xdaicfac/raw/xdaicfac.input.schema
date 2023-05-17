@@ -1,0 +1,413 @@
+{
+  "namespace": "bifi",
+  "name": "t_cicx_xdaicfac_fact_prima_poliz",
+  "doc": "Contiene informacion de Facturas o Recibos positivos que soportan un movimiento de prima realizado en la poliza",
+  "database": "raw",
+  "storageZone": "Rawdata",
+  "storageType": "HDFS-Avro",
+  "physicalPath": "/data/raw/cicx/data/t_cicx_xdaicfac_fact_prima_poliz",
+  "partitions": ["partition_data_year_id", "partition_data_month_id", "partition_data_day_id"],
+  "type": "record",
+  "fields": [{
+    "name": "system_bill_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "bill_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "receipt_sequential_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(13)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "third_party_personal_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "third_party_personal_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(15)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "thpty_personal_verfn_dgit_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "currency_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "local_ccy_bill_net_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(25,2)"
+  }, {
+    "name": "original_ccy_bill_net_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(25,2)"
+  }, {
+    "name": "policy_sale_intermediary_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(6)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "inv_pay_status_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "status_modif_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "branch_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(6)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "bill_expiration_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "collection_sequence_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "cancellation_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "invoice_annulation_msg_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(250)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "annulation_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "billing_alternate_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "transaction_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "doc_physical_bill_tenure_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "expense_relation_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "billing_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "bill_debit_relation_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "physical_bill_delivery_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "bill_observations_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2000)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "bill_doc_cancellation_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_company_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "invoice_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "raise_voucher_relation_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "bill_financing_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "invoice_submit_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "promissory_note_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "expiration_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "bill_collection_batch_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "collection_batch_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "billing_payment_reference_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "origl_ccy_bill_net_bal_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(25,2)"
+  }, {
+    "name": "local_ccy_bill_net_bal_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(25)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "(25,2)"
+  }, {
+    "name": "bill_raise_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "default_days_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "collection_sequential_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "oblg_balance_payment_bill_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pfolio_provision_validity_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "invoice_issue_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "payment_bill_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "annulation1_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "policy_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "initial_funding_date",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name": "user_cancel_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(15)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "pse_trade_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": true,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": true,
+    "default": ""
+  }, {
+    "name": "partition_data_day_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": true,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(26)",
+    "deleted": false,
+    "metadata": true,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS"
+  }]
+}

@@ -1,0 +1,12 @@
+{
+    "_id" : "biri-co-krb-inr-ydaicgarser-01",
+    "description" : "Job biri-co-krb-inr-ydaicgarser-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/biri/raw/ydaicgarse/${version}/ydaicgarse.rep.conf",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "XS",
+    "streaming" : false
+}

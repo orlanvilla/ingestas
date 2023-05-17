@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="Maven 1" modules="biac,bida,bifi,bipp,bips,biri,cbil,cbtq,ccog,cgug,cisd,cmol,cpad,csan,ifrs17-ingestion,kipp,kmcs">
+      <plugins>
+        <plugin path="C:\Users\carlos.villareal_blu\.m2\repository\org\scalamacros\paradise_2.12.10\2.1.1\paradise_2.12.10-2.1.1.jar" />
+      </plugins>
+    </profile>
+  </component>
+</project>

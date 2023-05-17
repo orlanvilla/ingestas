@@ -1,0 +1,12 @@
+{
+    "_id" : "cgug-co-spk-qlt-ydaicgarses-01",
+    "description" : "Job cgug-co-spk-qlt-ydaicgarses-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/cgug/staging/ydaicgarse/${version}/ydaicgarse-01.conf",
+        "sparkHistoryEnabled" : "true"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

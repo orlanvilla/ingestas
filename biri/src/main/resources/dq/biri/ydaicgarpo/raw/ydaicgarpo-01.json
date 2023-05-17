@@ -1,0 +1,11 @@
+{
+    "_id" : "biri-co-spk-qlt-ydaicgarpor-01",
+    "description" : "Job biri-co-spk-qlt-ydaicgarpor-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/biri/raw/ydaicgarpo/${version}/ydaicgarpo-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

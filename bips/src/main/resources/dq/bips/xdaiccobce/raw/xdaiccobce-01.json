@@ -1,0 +1,11 @@
+{
+    "_id" : "bips-co-spk-qlt-xdaiccobcer-01",
+    "description" : "Job bips-co-spk-qlt-xdaiccobcer-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/bips/raw/xdaiccobce/${version}/xdaiccobce-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "S",
+    "streaming" : false
+}

@@ -1,0 +1,11 @@
+{
+    "_id" : "bida-co-krb-inm-xtactvaleqr-01",
+    "description" : "Job bida-co-krb-inm-xtactvaleqr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/bida/master/xtactvaleq/${version}/xtactvaleq.rep.conf"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "S",
+    "streaming" : false
+}

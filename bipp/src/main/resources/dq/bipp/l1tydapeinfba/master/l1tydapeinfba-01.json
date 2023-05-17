@@ -1,0 +1,11 @@
+{
+    "_id" : "bipp-co-spk-qlt-l1tydapeinfbam-01",
+    "description" : "Job bipp-co-spk-qlt-l1tydapeinfbam-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/bipp/master/l1tydapeinfba/${version}/l1tydapeinfba-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

@@ -1,0 +1,302 @@
+{
+  "namespace": "kipp",
+  "name": "t_kipp_insurance_customer_l1t",
+  "doc": "Table that contains all the main attributes of the different types of insurance customers (with all their roles) Contiene datos Identificativos Personales Tokenizados",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/kipp/data/t_kipp_insurance_customer_l1t",
+  "partitions": ["gf_cutoff_date", "g_entity_id"],
+  "securityLevel": "L1T",
+  "objectVersion": "3.0.0",
+  "type": "record",
+  "fields": [{
+    "name": "gf_cutoff_date",
+    "type": "date",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "g_insurance_customer_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(17)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "g_global_segment_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gf_gender_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gf_birth_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co",
+    "origin": "BBVA",
+    "encrypted": false,
+    "encryptionType": "birth",
+    "encryptionMethod": "mask"
+  }, {
+    "name": "gf_demise_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "gf_cust_incapacity_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gf_cust_incapacity_per",
+    "type": ["null", "decimal(5,2)"],
+    "logicalFormat": "DECIMAL(5,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(5,2)",
+    "locale": "co"
+  }, {
+    "name": "gf_cust_incpy_start_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "gf_cust_incpy_end_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "gf_children_number",
+    "type": ["null", "decimal(2,0)"],
+    "logicalFormat": "DECIMAL(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(2,0)",
+    "locale": "co"
+  }, {
+    "name": "gf_single_orphanage_ch_number",
+    "type": ["null", "decimal(2,0)"],
+    "logicalFormat": "DECIMAL(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(2,0)",
+    "locale": "co"
+  }, {
+    "name": "gf_double_orphanage_ch_number",
+    "type": ["null", "decimal(2,0)"],
+    "logicalFormat": "DECIMAL(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(2,0)",
+    "locale": "co"
+  }, {
+    "name": "gf_spouses_number",
+    "type": ["null", "decimal(2,0)"],
+    "logicalFormat": "DECIMAL(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(2,0)",
+    "locale": "co"
+  }, {
+    "name": "gf_ascendants_number",
+    "type": ["null", "decimal(2,0)"],
+    "logicalFormat": "DECIMAL(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(2,0)",
+    "locale": "co"
+  }, {
+    "name": "gf_incpy_lf_prdt_as_amount",
+    "type": ["null", "decimal(26,6)"],
+    "logicalFormat": "DECIMAL(26,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(26,6)",
+    "locale": "co"
+  }, {
+    "name": "gf_occpnl_rsk_prdt_as_amount",
+    "type": ["null", "decimal(26,6)"],
+    "logicalFormat": "DECIMAL(26,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(26,6)",
+    "locale": "co"
+  }, {
+    "name": "gf_article_14_enttl_start_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "gf_article_14_clct_start_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "gf_11_pct_incr_clct_strt_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "gf_11_pct_incr_enttl_strt_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "gf_11_pct_incr_minc_amount",
+    "type": ["null", "decimal(26,6)"],
+    "logicalFormat": "DECIMAL(26,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(26,6)",
+    "locale": "co"
+  }, {
+    "name": "gf_11_pct_incr_ext_pay_amount",
+    "type": ["null", "decimal(26,6)"],
+    "logicalFormat": "DECIMAL(26,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(26,6)",
+    "locale": "co"
+  }, {
+    "name": "gf_article_14_minc_amount",
+    "type": ["null", "decimal(26,6)"],
+    "logicalFormat": "DECIMAL(26,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(26,6)",
+    "locale": "co"
+  }, {
+    "name": "gf_inscr_ben_paid_setl_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gf_incr_enttl_ss_cust_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gf_pns_strdt_cust_cntyr_number",
+    "type": ["null", "decimal(2,0)"],
+    "logicalFormat": "DECIMAL(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(2,0)",
+    "locale": "co"
+  }, {
+    "name": "g_cust_orphanage_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gf_11_pct_incr_enttl_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gf_customer_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gf_origin_application_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(8)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "g_entity_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(6)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gf_audit_date",
+    "type": ["timestamp", "null"],
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+    "locale": "co"
+  }, {
+    "name": "gf_operational_audit_date",
+    "type": ["timestamp", "null"],
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+    "locale": "co"
+  }]
+}

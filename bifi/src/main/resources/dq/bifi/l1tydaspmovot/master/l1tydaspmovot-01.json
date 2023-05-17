@@ -1,0 +1,12 @@
+{
+    "_id" : "bifi-co-spk-qlt-l1tydaspmovotm-01",
+    "description" : "Job bifi-co-spk-qlt-l1tydaspmovotm-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/bifi/master/l1tydaspmovot/${version}/l1tydaspmovot-01.conf",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "S",
+    "streaming" : false
+}

@@ -1,0 +1,14 @@
+{
+    "_id" : "bifi-co-krb-inm-ydaspmovotr-01",
+    "description" : "Job bifi-co-krb-inm-ydaspmovotr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "artifactUrl" : "${repository.endpoint}/spark-global-libs-release-local/com/datio/dataproc/kirby/kirby-standalone/${process.version}/kirby-standalone-${process.version}.jar",
+        "configUrl" : "${repository.endpoint}/${repository.repo}/kirby/co/bifi/master/ydaspmovot/${version}/ydaspmovot.rep.conf",
+        "mainClass" : "com.datio.dataproc.kirby.standalone.KirbyLauncher",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "spark:2.4.3",
+    "size" : "S",
+    "streaming" : false
+}

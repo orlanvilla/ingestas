@@ -1,0 +1,11 @@
+{
+    "_id" : "bips-co-spk-qlt-ydaicpolizr-01",
+    "description" : "Job bips-co-spk-qlt-ydaicpolizr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/bips/raw/ydaicpoliz/${version}/ydaicpoliz-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

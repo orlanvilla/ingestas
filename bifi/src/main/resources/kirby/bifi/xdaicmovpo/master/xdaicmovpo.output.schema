@@ -1,0 +1,185 @@
+{
+  "namespace": "bifi",
+  "name": "t_bifi_xdaicmovpo_movim_polizas",
+  "doc": "Tabla maestra de los movimientos tecnicos realizados a la poliza (Emision, Suplementos, Anulaciones, Endosos, etc)",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/bifi/data/t_bifi_xdaicmovpo_movim_polizas",
+  "partitions": ["partition_data_year_id", "partition_data_month_id", "partition_data_day_id"],
+  "securityLevel": "L1",
+  "type": "record",
+  "fields": [{
+    "name": "policy_movement_type",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "system_policy_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_certificate_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_movement_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_movement_date",
+    "type": "date",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "movement_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "annulation_operation_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "movement_annulation_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "cancellation_mark_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "movement_canceled_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "endorsement_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(15)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_reactivation_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_movement_reversion_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(22)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "annulation_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "agreed_rate_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "conversion_exchange_rate_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "exchange_rate_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "return_annual_premium_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_day_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "timestamp",
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+    "locale": "co"
+  }]
+}

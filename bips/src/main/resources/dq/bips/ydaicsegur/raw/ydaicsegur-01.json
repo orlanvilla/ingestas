@@ -1,0 +1,12 @@
+{
+    "_id" : "bips-co-spk-qlt-ydaicsegurr-01",
+    "description" : "Job bips-co-spk-qlt-ydaicsegurr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/bips/raw/ydaicsegur/${version}/ydaicsegur-01.conf",
+        "sparkHistoryEnabled" : "true"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

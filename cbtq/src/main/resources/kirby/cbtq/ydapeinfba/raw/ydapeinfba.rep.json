@@ -1,0 +1,14 @@
+{
+    "_id" : "cbtq-co-krb-inr-ydapeinfbar-01",
+    "description" : "Job cbtq-co-krb-inr-ydapeinfbar-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "artifactUrl" : "${repository.endpoint}/spark-global-libs-release-local/com/datio/dataproc/kirby/kirby-standalone/${process.version}/kirby-standalone-${process.version}.jar",
+        "configUrl" : "${repository.endpoint}/${repository.repo}/kirby/co/cbtq/raw/ydapeinfba/${version}/ydapeinfba.rep.conf",
+        "mainClass" : "com.datio.dataproc.kirby.standalone.KirbyLauncher",
+        "sparkHistoryEnabled" : "true"
+    },
+    "runtime" : "spark:2.4.3",
+    "size" : "S",
+    "streaming" : false
+}

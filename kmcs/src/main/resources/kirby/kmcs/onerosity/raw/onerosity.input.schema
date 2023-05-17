@@ -1,0 +1,56 @@
+{
+	"namespace": "comp.kmcs",
+	"name": "t_kmcs_onerosity_policy",
+	"doc": "kmcs",
+	"database": "raw",
+	"storageZone": "Rawdata",
+	"storageType": "HDFS-Avro",
+	"physicalPath": "/data/raw/kmcs/data/t_kmcs_onerosity_policy",
+	"objectVersion": "1.0.0",
+	"partitions": ["g_entity_id"],
+	"type": "record",
+
+	"fields":    [ {
+				"name": "g_insurance_policy_id",
+				"type": "string",
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(28)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_onerosity_lst_upd_date",
+				"type": "string",
+				"legacyName": "",
+				"logicalFormat": "DATE",
+				"format": "yyyy-MM-dd",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "g_onerosity_contract_ind_type",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(1)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "g_entity_id",
+				"type": "string",
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(6)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_audit_date",
+				"type": "string",
+				"logicalFormat": "TIMESTAMP",
+				"format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+				"deleted": false,
+				"metadata": true,
+				"default": ""
+			}]
+
+}

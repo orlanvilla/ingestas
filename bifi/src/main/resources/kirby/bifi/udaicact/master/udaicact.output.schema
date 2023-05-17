@@ -1,0 +1,242 @@
+{
+  "namespace": "bifi",
+  "name": "t_bifi_udaicact_val_con_actuaria",
+  "doc": "Contiene la informacion de los valores reales contablers de Actuaria obtenidos del ultimo cierre, necesarios para la realizacion del analisis del cambio\nSe utilizan para comparar frente a los valores esperados que se han calculado en el cierre anterior, de esa forma se analizan las variaciones producidas entre lo que se ha estimado con lo que se tiene realmente en ese momento",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/bifi/data/t_bifi_udaicact_val_con_actuaria",
+  "partitions": ["partition_data_year_id", "partition_data_month_id"],
+  "securityLevel": "L1",
+  "type": "record",
+  "fields": [{
+    "name": "risk_group_id",
+    "type": ["null", "decimal(4)"],
+    "logicalFormat": "DECIMAL(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(4)",
+    "locale": "co"
+  }, {
+    "name": "bonus_per",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "expected_premium_per",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "inct_aqn_exp_lc_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "sinister_asset_tot_val_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "actl_pnl_inv_inc_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "actl_oci_inv_inc_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "actl_inv_ctrct_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "other_expenses_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "total_premium_srce_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "sinister_reserve_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "actl_oci_inv_inc_per",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "prev_defer_aqn_cost_amount",
+    "type": ["null", "decimal(1)"],
+    "logicalFormat": "DECIMAL(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(1)",
+    "locale": "co"
+  }, {
+    "name": "current_defer_aqn_cost_amount",
+    "type": ["null", "decimal(1)"],
+    "logicalFormat": "DECIMAL(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(1)",
+    "locale": "co"
+  }, {
+    "name": "prm_rsv_dac_cal_int_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "reinsurance_rsrvtn_rlse_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "reinsurance_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "accrue_pending_prem_amount",
+    "type": ["null", "decimal(27,6)"],
+    "logicalFormat": "DECIMAL(27,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(27,6)",
+    "locale": "co"
+  }, {
+    "name": "srv_rlse_pend_mth_number",
+    "type": ["null", "decimal(4)"],
+    "logicalFormat": "DECIMAL(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(4)",
+    "locale": "co"
+  }, {
+    "name": "srv_rlse_remaining_mth_number",
+    "type": ["null", "decimal(4)"],
+    "logicalFormat": "DECIMAL(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(4)",
+    "locale": "co"
+  }, {
+    "name": "defer_aqn_cost_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "defer_aqn_cost_int_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "incur_cl_reserve_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "movement_account_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(36)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "timestamp",
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss",
+    "locale": "co"
+  }]
+}

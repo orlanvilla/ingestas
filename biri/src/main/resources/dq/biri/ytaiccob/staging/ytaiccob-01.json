@@ -1,0 +1,12 @@
+{
+    "_id" : "biri-co-spk-qlt-ytaiccobs-01",
+    "description" : "Job biri-co-spk-qlt-ytaiccobs-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/biri/staging/ytaiccob/${version}/ytaiccob-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}
+

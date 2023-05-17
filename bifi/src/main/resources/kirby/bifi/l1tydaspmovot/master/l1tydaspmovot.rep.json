@@ -1,0 +1,12 @@
+{
+    "_id" : "bifi-co-krb-inm-l1tydaspmovotr-01",
+    "description" : "Job bifi-co-krb-inm-l1tydaspmovotr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/bifi/master/l1tydaspmovot/${version}/l1tydaspmovot.rep.conf",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "S",
+    "streaming" : false
+}

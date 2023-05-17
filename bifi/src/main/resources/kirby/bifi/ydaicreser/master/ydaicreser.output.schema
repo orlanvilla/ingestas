@@ -1,0 +1,308 @@
+{
+  "namespace": "bifi",
+  "name": "t_bifi_ydaicreser_reservas_calcu",
+  "doc": "Tabla donde se almacenan las reservas calculadas",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/bifi/data/t_bifi_ydaicreser_reservas_calcu",
+  "partitions": ["partition_data_year_id", "partition_data_month_id"],
+  "securityLevel": "L2",
+  "type": "record",
+  "fields": [{
+    "name": "insurance_reservation_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_entity_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "branch_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_modality_type",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_policy_type",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insured_customer_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_certificate_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "provision_calculation_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "accounting_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "capital_provision_amount",
+    "type": ["null", "decimal(16,0)"],
+    "logicalFormat": "DECIMAL(16,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(16,0)",
+    "locale": "co"
+  }, {
+    "name": "coinsurance_premium_amount",
+    "type": ["null", "decimal(16,0)"],
+    "logicalFormat": "DECIMAL(16,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(16,0)",
+    "locale": "co"
+  }, {
+    "name": "insurance_provision_amount",
+    "type": ["null", "decimal(16,0)"],
+    "logicalFormat": "DECIMAL(16,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(16,0)",
+    "locale": "co"
+  }, {
+    "name": "reservation_release_amount",
+    "type": ["null", "decimal(16,0)"],
+    "logicalFormat": "DECIMAL(16,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(16,0)",
+    "locale": "co"
+  }, {
+    "name": "insurance_provision_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_receipt_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "source_system_record_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "gl_register_operation_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_start_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "insurance_policy_expiry_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "policy_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "third_party_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_released_counter_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "reinsurance_provision_amount",
+    "type": ["null", "decimal(16,0)"],
+    "logicalFormat": "DECIMAL(16,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(16,0)",
+    "locale": "co"
+  }, {
+    "name": "reinsurance_rsrvtn_rlse_amount",
+    "type": ["null", "decimal(16,0)"],
+    "logicalFormat": "DECIMAL(16,0)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(16,0)",
+    "locale": "co"
+  }, {
+    "name": "plcy_sale_intermedia_fee_per",
+    "type": ["null", "decimal(9,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(9,6)",
+    "locale": "co"
+  }, {
+    "name": "plcy_holder_remuneration_per",
+    "type": ["null", "decimal(5,2)"],
+    "logicalFormat": "DECIMAL(5,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(5,2)",
+    "locale": "co"
+  }, {
+    "name": "third_remuneration_per",
+    "type": ["null", "decimal(5,2)"],
+    "logicalFormat": "DECIMAL(5,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(5,2)",
+    "locale": "co"
+  }, {
+    "name": "tmktg_issued_plcy_fee_per",
+    "type": ["null", "decimal(9,6)"],
+    "logicalFormat": "DECIMAL(9,6)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(9,6)",
+    "locale": "co"
+  }, {
+    "name": "receipt_validity_day_number",
+    "type": ["null", "int32"],
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": null
+  }, {
+    "name": "bill_payment_status_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "receipt_issue_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "start_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "end_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "period_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "timestamp",
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+    "locale": "co"
+  }]
+}

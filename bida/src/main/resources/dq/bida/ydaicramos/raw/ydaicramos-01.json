@@ -1,0 +1,12 @@
+{
+    "_id" : "bida-co-spk-qlt-ydaicramosr-01",
+    "description" : "Job bida-co-spk-qlt-ydaicramosr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/bida/raw/ydaicramos/${version}/ydaicramos-01.conf",
+        "sparkHistoryEnabled" : "true"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

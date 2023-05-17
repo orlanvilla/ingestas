@@ -1,0 +1,11 @@
+{
+    "_id" : "bipp-co-krb-inm-xdapeclienr-01",
+    "description" : "Job bipp-co-krb-inm-xdapeclienr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/bipp/master/xdapeclien/${version}/xdapeclien.rep.conf"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "S",
+    "streaming" : false
+}

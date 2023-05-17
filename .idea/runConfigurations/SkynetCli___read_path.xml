@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SkynetCli - read-path" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="com.datio.skynet.cli.SkynetCli" />
+    <module name="cpad" />
+    <option name="PROGRAM_PARAMETERS" value="read-path --type parquet --path C:\Users\carlos.villareal_blu\AppData\Local\Temp\skynet\kirby\hdaspcat\master\rep\output\partition_data_year_id=2023 --records 100 --browser false" />
+    <shortenClasspath name="MANIFEST" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.datio.skynet.cli.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

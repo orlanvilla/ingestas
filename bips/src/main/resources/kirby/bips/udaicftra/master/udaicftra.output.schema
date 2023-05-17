@@ -1,0 +1,77 @@
+{
+  "namespace": "bips",
+  "name": "t_bips_udaicftra_flujo_tramo_seg",
+  "doc": "Contiene la informacion de los tramos del seguro. En los seguros de ahorro y rentas, el seguro tiene establecido tipos de interes para cada uno de los tramos.",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/bips/data/t_bips_udaicftra_flujo_tramo_seg",
+  "partitions": ["partition_data_year_id", "partition_data_month_id"],
+  "securityLevel": "L1",
+  "type": "record",
+  "fields": [{
+    "name": "insurance_tranche_start_date",
+    "type": "date",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "insurance_tranche_end_date",
+    "type": "date",
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "tranche_position_order_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "tranche_interest_per",
+    "type": "decimal(17,15)",
+    "logicalFormat": "DECIMAL(17,15)",
+    "deleted": false,
+    "metadata": false,
+    "default": 0.0,
+    "format": "(17,15)",
+    "locale": "co"
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "timestamp",
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+    "locale": "co"
+  }]
+}

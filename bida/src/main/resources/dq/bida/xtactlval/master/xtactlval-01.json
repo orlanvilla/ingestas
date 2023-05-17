@@ -1,0 +1,11 @@
+{
+    "_id" : "bida-co-spk-qlt-xtactlvalm-01",
+    "description" : "Job bida-co-spk-qlt-xtactlvalm-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/bida/master/xtactlval/${version}/xtactlval-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "S",
+    "streaming" : false
+}

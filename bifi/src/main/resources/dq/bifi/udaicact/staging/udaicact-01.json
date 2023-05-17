@@ -1,0 +1,11 @@
+{
+    "_id" : "bifi-co-spk-qlt-udaicacts-01",
+    "description" : "Job bifi-co-spk-qlt-udaicacts-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/bifi/staging/udaicact/${version}/udaicact-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "S",
+    "streaming" : false
+}

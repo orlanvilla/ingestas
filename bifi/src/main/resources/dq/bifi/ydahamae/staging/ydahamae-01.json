@@ -1,0 +1,11 @@
+{
+    "_id" : "bifi-co-spk-qlt-ydahamaes-01",
+    "description" : "Job bifi-co-spk-qlt-ydahamaes-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/bifi/staging/ydahamae/${version}/ydahamae-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

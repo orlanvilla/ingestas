@@ -1,0 +1,153 @@
+{
+	"namespace": "comp.kmcs",
+	"name": "t_kmcs_balance_account_ifrs17",
+	"doc": "kmcs",
+	"database": "raw",
+	"storageZone": "Rawdata",
+	"storageType": "HDFS-Avro",
+	"physicalPath": "/data/raw/kmcs/data/t_kmcs_balance_account_ifrs17",
+	"objectVersion": "2.0.0",
+	"partitions": ["g_entity_id","gf_cutoff_date"],
+	"type": "record",
+
+	"fields":    [ {
+				"name": "gf_cutoff_date",
+				"type": "string",
+				"legacyName": "",
+				"logicalFormat": "DATE",
+				"format": "yyyy-MM-dd",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_gl_account_id",
+				"type": "string",
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(20)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_fis_account_unity_id",
+				"type": "string",
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(70)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "g_origin_currency_id",
+				"type": "string",
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(3)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_gl_account_name",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(250)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_pv_mth_ledger_bal_oc_amount",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "DECIMAL(26,6)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_mthly_debit_bal_oc_amount",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "DECIMAL(26,6)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_mthly_credit_bal_oc_amount",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "DECIMAL(26,6)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_mthly_ledger_bal_oc_amount",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "DECIMAL(26,6)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "g_global_product_subfamily_id",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(10)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_similar_risk_grouping_id",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(30)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_pnl_inct_impc_valmeth_type",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(3)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_policy_issue_year_id",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(4)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "g_onerosity_contract_ind_type",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(1)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "g_account_unity_id",
+				"type": ["string", "null"],
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(36)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "g_entity_id",
+				"type": "string",
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(6)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, {
+				"name": "gf_audit_date",
+				"type": "string",
+				"legacyName": "",
+				"logicalFormat": "TIMESTAMP",
+				"format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}]
+
+}

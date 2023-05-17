@@ -1,0 +1,11 @@
+{
+    "_id" : "bipp-co-spk-qlt-xdaicaser-01",
+    "description" : "Job bipp-co-spk-qlt-xdaicaser-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/bipp/raw/xdaicase/${version}/xdaicase-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

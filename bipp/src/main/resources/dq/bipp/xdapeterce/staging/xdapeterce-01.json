@@ -1,0 +1,11 @@
+{
+    "_id" : "bipp-co-spk-qlt-xdapeterces-01",
+    "description" : "Job bipp-co-spk-qlt-xdapeterces-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/bipp/staging/xdapeterce/${version}/xdapeterce-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "S",
+    "streaming" : false
+}

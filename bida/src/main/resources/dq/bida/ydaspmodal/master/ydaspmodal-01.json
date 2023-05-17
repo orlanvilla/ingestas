@@ -1,0 +1,11 @@
+{
+    "_id" : "bida-co-spk-qlt-ydaspmodalm-01",
+    "description" : "Job bida-co-spk-qlt-ydaspmodalm-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/bida/master/ydaspmodal/${version}/ydaspmodal-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

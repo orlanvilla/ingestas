@@ -1,0 +1,12 @@
+{
+    "_id" : "cpad-co-krb-inr-hdaspcatr-01",
+    "description" : "Job cpad-co-krb-inr-hdaspcatr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/cpad/raw/hdaspcat/${version}/hdaspcat.rep.conf",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "SET THE PROPER JOB SIZE. Available job sizes: 'XXS, XS, S, M, L, XL'",
+    "streaming" : false
+}

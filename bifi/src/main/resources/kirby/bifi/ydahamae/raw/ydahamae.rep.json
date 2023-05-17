@@ -1,0 +1,11 @@
+{
+    "_id" : "bifi-co-krb-inr-ydahamaer-01",
+    "description" : "Job bifi-co-krb-inr-ydahamaer-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/bifi/raw/ydahamae/${version}/ydahamae.rep.conf"
+            },
+    "runtime" : "kirby3-lts",
+    "size" : "XS",
+    "streaming" : false
+}

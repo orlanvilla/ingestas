@@ -1,0 +1,14 @@
+{
+    "_id" : "cmol-co-krb-inr-ydaicmovpor-01",
+    "description" : "Job cmol-co-krb-inr-ydaicmovpor-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "artifactUrl" : "${repository.endpoint}/spark-global-libs-release-local/com/datio/dataproc/kirby/kirby-standalone/${process.version}/kirby-standalone-${process.version}.jar",
+        "configUrl" : "${repository.endpoint}/${repository.repo}/kirby/co/cmol/raw/ydaicmovpo/${version}/ydaicmovpo.rep.conf",
+        "mainClass" : "com.datio.dataproc.kirby.standalone.KirbyLauncher",
+        "sparkHistoryEnabled" : "true"
+    },
+    "runtime" : "spark:2.4.3",
+    "size" : "S",
+    "streaming" : false
+}

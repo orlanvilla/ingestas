@@ -1,0 +1,12 @@
+{
+    "_id" : "bips-co-spk-qlt-udaicgsegs-01",
+    "description" : "Job bips-co-spk-qlt-udaicgsegs-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/bips/staging/udaicgseg/${version}/udaicgseg-01.conf",
+        "sparkHistoryEnabled" : "true"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

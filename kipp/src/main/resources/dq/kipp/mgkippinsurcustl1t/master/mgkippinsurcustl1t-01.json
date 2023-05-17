@@ -1,0 +1,11 @@
+{
+    "_id" : "kipp-co-spk-qlt-mgkippinsurcustl1tm-01",
+    "description" : "Job kipp-co-spk-qlt-mgkippinsurcustl1tm-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/kipp/master/mgkippinsurcustl1t/${version}/mgkippinsurcustl1t-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "S",
+    "streaming" : false
+}

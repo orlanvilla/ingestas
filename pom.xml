@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.datio.skynet</groupId>
+        <artifactId>skynet-parent</artifactId>
+        <version>T-1500.2.2</version>
+    </parent>
+
+    <groupId>com.datio.ifrs17</groupId>
+    <artifactId>ifrs17-ingestion</artifactId>
+    <packaging>pom</packaging>
+    <version>0.2.0-SNAPSHOT</version>
+
+    <name>Parent ifrs17-ingestion</name>
+
+    <properties>
+        <skynet-cli.version>T-1500.2.2</skynet-cli.version>
+        <skynet-maven-plugin.version>T-1500.2.2</skynet-maven-plugin.version>
+        <skynet.country>co</skynet.country>
+        <skynet.governance.schema.version>v3</skynet.governance.schema.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.bbva.projectsdatio</groupId>
+            <artifactId>CDD-extkirby</artifactId>
+            <version>2.10.5</version>
+        </dependency>
+    </dependencies>
+
+    <modules>
+        <module>cbil</module>
+        <module>cbtq</module>
+        <module>ccog</module>
+        <module>cgug</module>
+        <module>cisd</module>
+        <module>cmol</module>
+        <module>cpad</module>
+        <module>csan</module>
+        <module>bips</module>
+        <module>bida</module>
+        <module>biri</module>
+        <module>bipp</module>
+        <module>biac</module>
+        <module>kipp</module>
+        <module>bifi</module>
+        <module>kmcs</module>
+    </modules>
+</project>

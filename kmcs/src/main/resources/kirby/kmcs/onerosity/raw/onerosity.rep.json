@@ -1,0 +1,11 @@
+{
+    "_id" : "kmcs-co-krb-inr-onerosityr-01",
+    "description" : "Job kmcs-co-krb-inr-onerosityr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/kmcs/raw/onerosity/${version}/onerosity.rep.conf"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "M",
+    "streaming" : false
+}

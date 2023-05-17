@@ -1,0 +1,11 @@
+{
+    "_id" : "bifi-co-spk-qlt-ydaicmovpor-01",
+    "description" : "Job bifi-co-spk-qlt-ydaicmovpor-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/bifi/raw/ydaicmovpo/${version}/ydaicmovpo-01.conf"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

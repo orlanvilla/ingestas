@@ -1,0 +1,12 @@
+{
+    "_id" : "bips-co-spk-qlt-l1tydaicpredm-01",
+    "description" : "Job bips-co-spk-qlt-l1tydaicpredm-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/bips/master/l1tydaicpred/${version}/l1tydaicpred-01.conf",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "S",
+    "streaming" : false
+}

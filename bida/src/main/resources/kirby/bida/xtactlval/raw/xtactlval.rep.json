@@ -1,0 +1,12 @@
+{
+    "_id" : "bida-co-krb-inr-xtactlvalr-01",
+    "description" : "Job bida-co-krb-inr-xtactlvalr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/bida/raw/xtactlval/${version}/xtactlval.rep.conf",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "S",
+    "streaming" : false
+}

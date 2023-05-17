@@ -1,0 +1,257 @@
+{
+  "namespace": "bifi",
+  "name": "t_cicu_udaicact_val_con_actuaria",
+  "doc": "Contiene la informacion de los valores reales contablers de Actuaria obtenidos del ultimo cierre, necesarios para la realizacion del analisis del cambio\nSe utilizan para comparar frente a los valores esperados que se han calculado en el cierre anterior, de esa forma se analizan las variaciones producidas entre lo que se ha estimado con lo que se tiene realmente en ese momento",
+  "database": "raw",
+  "storageZone": "Rawdata",
+  "storageType": "HDFS-Avro",
+  "physicalPath": "/data/raw/cicu/data/t_cicu_udaicact_val_con_actuaria",
+  "partitions": ["partition_data_year_id", "partition_data_month_id"],
+  "type": "record",
+  "fields": [{
+    "name": "risk_group_id",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "bonus_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "expected_premium_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "inct_aqn_exp_lc_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "sinister_asset_tot_val_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_1_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "actl_pnl_inv_inc_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "actl_oci_inv_inc_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "actl_inv_ctrct_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "other_expenses_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "total_premium_srce_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "sinister_reserve_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "actl_oci_inv_inc_per",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "prev_defer_aqn_cost_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "current_defer_aqn_cost_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_3_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "prm_rsv_dac_cal_int_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "reinsurance_rsrvtn_rlse_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "reinsurance_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "accrue_pending_prem_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(27)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_4_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_5_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_6_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_7_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_8_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "free_field_9_amount",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "srv_rlse_pend_mth_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "srv_rlse_remaining_mth_number",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "defer_aqn_cost_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "defer_aqn_cost_int_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "incur_cl_reserve_ind_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "movement_account_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(36)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }]
+}

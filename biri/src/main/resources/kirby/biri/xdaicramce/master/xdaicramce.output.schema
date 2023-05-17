@@ -1,0 +1,233 @@
+{
+  "namespace": "biri",
+  "name": "t_biri_xdaicramce_ramos_certific",
+  "doc": "Tabla con la informacion de los Ramos de Seguros incluidos en cada uno de los certificados de la poliza",
+  "database": "master",
+  "storageZone": "Masterdata",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/biri/data/t_biri_xdaicramce_ramos_certific",
+  "partitions": ["partition_data_year_id", "partition_data_month_id", "partition_data_day_id"],
+  "securityLevel": "L1",
+  "type": "record",
+  "fields": [{
+    "name": "system_policy_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(14)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_certificate_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(10)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_policy_type",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "business_status_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "policy_plan_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insurance_plan_tarf_version_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(3)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "effective_start_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "effective_end_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "cumulus_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(15)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "exclusion_date",
+    "type": ["date", "null"],
+    "logicalFormat": "DATE",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd",
+    "locale": "co"
+  }, {
+    "name": "certificate_exclusion_rsn_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "exclusion_reason_desc",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(250)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "inct_ddct_excs_per",
+    "type": ["null", "decimal(7,4)"],
+    "logicalFormat": "DECIMAL(7,4)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(7,4)",
+    "locale": "co"
+  }, {
+    "name": "min_deductible_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "deductible_base_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "insured_deductible_mark_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "deductible_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "max_deductible_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "first_loss_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "highest_concentration_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "first_loss_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "deposit_premium_per",
+    "type": ["null", "decimal(6,3)"],
+    "logicalFormat": "DECIMAL(6,3)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(6,3)",
+    "locale": "co"
+  }, {
+    "name": "bunch_exclusion_type",
+    "type": ["string", "null"],
+    "logicalFormat": "ALPHANUMERIC(1)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "reinsurance_amount",
+    "type": ["null", "decimal(24,2)"],
+    "logicalFormat": "DECIMAL(24,2)",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "(24,2)",
+    "locale": "co"
+  }, {
+    "name": "partition_data_year_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(4)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_month_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "partition_data_day_id",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(2)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "operational_audit_insert_date",
+    "type": "timestamp",
+    "logicalFormat": "TIMESTAMP",
+    "deleted": false,
+    "metadata": false,
+    "default": "",
+    "format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+    "locale": "co"
+  }]
+}

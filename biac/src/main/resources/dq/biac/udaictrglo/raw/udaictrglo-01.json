@@ -1,0 +1,12 @@
+{
+    "_id" : "biac-co-spk-qlt-udaictrglor-01",
+    "description" : "Job biac-co-spk-qlt-udaictrglor-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/dq/co/biac/raw/udaictrglo/${version}/udaictrglo-01.conf",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}

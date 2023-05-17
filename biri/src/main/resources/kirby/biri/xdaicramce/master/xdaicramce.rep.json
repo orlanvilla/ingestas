@@ -1,0 +1,11 @@
+{
+    "_id" : "biri-co-krb-inm-xdaicramcer-01",
+    "description" : "Job biri-co-krb-inm-xdaicramcer-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/biri/master/xdaicramce/${version}/xdaicramce.rep.conf"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "S",
+    "streaming" : false
+}

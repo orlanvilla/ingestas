@@ -1,0 +1,14 @@
+{
+    "_id" : "bips-co-krb-inr-xdaicsinr-01",
+    "description" : "Job bips-co-krb-inr-xdaicsinr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "artifactUrl" : "${repository.endpoint.vdc}/${repository.repo.proc.releases}/com/datio/dataproc/kirby/kirby-standalone/${process.version}/kirby-standalone-${process.version}.jar",
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/bips/raw/xdaicsin/${version}/xdaicsin.rep.conf",
+        "mainClass" : "com.datio.dataproc.kirby.standalone.KirbyLauncher",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "spark:3.1",
+    "size" : "S",
+    "streaming" : false
+}

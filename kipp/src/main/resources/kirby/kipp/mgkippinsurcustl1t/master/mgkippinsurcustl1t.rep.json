@@ -1,0 +1,12 @@
+{
+    "_id" : "kipp-co-krb-inm-mgkippinsurcustl1tr-01",
+    "description" : "Job kipp-co-krb-inm-mgkippinsurcustl1tr-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/kipp/master/mgkippinsurcustl1t/${version}/mgkippinsurcustl1t.rep.conf",
+        "sparkHistoryEnabled" : "false"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "M",
+    "streaming" : false
+}

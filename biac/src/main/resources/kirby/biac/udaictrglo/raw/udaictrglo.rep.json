@@ -1,0 +1,11 @@
+{
+    "_id" : "biac-co-krb-inr-udaictrglor-01",
+    "description" : "Job biac-co-krb-inr-udaictrglor-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint.vdc}/${repository.repo.schemas}/kirby/co/biac/raw/udaictrglo/${version}/udaictrglo.rep.conf"
+    },
+    "runtime" : "kirby3-lts",
+    "size" : "S",
+    "streaming" : false
+}

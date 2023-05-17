@@ -1,0 +1,12 @@
+{
+    "_id" : "cbil-co-spk-qlt-ydaicmvrecs-01",
+    "description" : "Job cbil-co-spk-qlt-ydaicmvrecs-01 created with Skynet.",
+    "kind" : "processing",
+    "params" : {
+        "configUrl" : "${repository.endpoint}/${repository.repo}/dq/co/cbil/staging/ydaicmvrec/${version}/ydaicmvrec-01.conf",
+        "sparkHistoryEnabled" : "true"
+    },
+    "runtime" : "hammurabi-lts",
+    "size" : "XS",
+    "streaming" : false
+}
